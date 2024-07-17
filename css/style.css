@@ -1,0 +1,33 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.custemr-section{
+
+    background-color: antiquewhite;
+}
+
+.transuction{
+    background-color: grey;
+}
+
+.details{
+    background-color: antiquewhite;
+}
+
+.search{
+    background-color: grey;
+}
+
+a{
+    transition: all 0.5s;
+}
+
+li:hover a{
+
+    color: red !important ;
+}
+
+h1{
+    color: white;
+}

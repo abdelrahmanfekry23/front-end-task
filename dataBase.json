@@ -1,0 +1,110 @@
+{
+  "custmers": [
+    {
+      "id": "1",
+      "name": "ahmed ali"
+    },
+    {
+      "id": "2",
+      "name": "aya elsayed"
+    },
+    {
+      "id": "3",
+      "name": "mina adel"
+    },
+    {
+      "id": "4",
+      "name": "sarah reda"
+    },
+    {
+      "id": "5",
+      "name": "mohamed sayed"
+    },
+    {
+      "id": 6,
+      "name": "ahmed hossam"
+    },
+    {
+      "id": 6,
+      "name": "yasser ali"
+    },
+    {
+      "id": 6,
+      "name": "mohamed ali"
+    },
+    {
+      "id": 0,
+      "name": "abdelrahman mohamed"
+    },
+    {
+      "id": "10",
+      "name": "sara ahmed"
+    },
+    {
+      "id": "11",
+      "name": "aya yasser"
+    }
+  ],
+  "transuction": [
+    {
+      "id": "1",
+      "custmerId": 1,
+      "date": "01-01-2022",
+      "amount": 1000
+    },
+    {
+      "id": "2",
+      "custmerId": 1,
+      "date": "02-01-2022",
+      "amount": 2000
+    },
+    {
+      "id": "3",
+      "custmerId": 2,
+      "date": "01-01-2022",
+      "amount": 550
+    },
+    {
+      "id": "4",
+      "custmerId": 3,
+      "date": "01-01-2022",
+      "amount": 500
+    },
+    {
+      "id": "5",
+      "custmerId": 2,
+      "date": "02-01-2022",
+      "amount": 1300
+    },
+    {
+      "id": "6",
+      "custmerId": 4,
+      "date": "01-01-2022",
+      "amount": 750
+    },
+    {
+      "id": "7",
+      "custmerId": 3,
+      "date": "02-01-2022",
+      "amount": 1250
+    },
+    {
+      "id": "8",
+      "custmerId": 5,
+      "date": "01-01-2022",
+      "amount": 2500
+    },
+    {
+      "id": "9",
+      "custmerId": 5,
+      "date": "02-01-2022",
+      "amount": 875
+    },
+    {
+      "id": "10",
+      "custmerId": "4",
+      "date": "02-01-2022",
+      "amount": "1500"
+    }
+  ]
+}

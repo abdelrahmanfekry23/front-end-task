@@ -1,0 +1,324 @@
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!------------------------------------------------------------------------------------------------------------------------>
+
+
+
+
+
+    <script type="text/javascript">
+
+
+
+
+
+      window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+    
+          title:{
+            text: "Custmer Transuction"              
+          },
+          data: [//array of dataSeries              
+            { //dataSeries object
+    
+             /*** Change type "column" to "bar", "area", "line" or "pie"***/
+             type: "column",
+             dataPoints: [
+             { label: "custmer-id-1", y: 1000 },
+             { label: "custmer-id-1", y: 2000 },
+             { label: "custmer-id-2", y: 550 },
+             { label: "custmer-id-3", y: 500 },
+             { label: "custmer-id-2", y: 1300 },
+             { label: "custmer-id-4", y: 750 },
+             { label: "custmer-id-3", y: 1250 },
+             { label: "custmer-id-5", y: 2500 },
+             { label: "custmer-id-5", y: 875 },
+            
+            
+             { label: "Custmer-id-4", y: 1500 }
+             ]
+           }
+           ]
+         });
+    
+        chart.render();
+      }
+      </script>
+      <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+    <!------------------------------------------------------------------------------------------------------------------------>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100 top-0">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Transuction</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse position-absolute start-50" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Custmers-section">Custmers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tranection-section">Transuctions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#details-section">User Details</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#search-section">Search</a>
+        </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="home vh-100 bg-black d-flex justify-content-center align-items-center" id="home">
+
+    <h1>Welcom to Transuction and Custmers details</h1>
+
+    
+
+  </div>
+    
+<!--       custumer srart            -->
+
+
+<div class="custemr-section" id="Custmers-section">
+
+
+<h2 class="text-center my-5">Custumer Details</h2>
+<div class="custumer-inner  container p-5 d-flex">
+
+    <table class="table w-50 table-success table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            
+          </tr>
+        </thead>
+        <tbody id="custumerTable">
+        
+          
+        </tbody>
+      </table>
+
+      <div class="enterUser w-50 p-5">
+        <label for="newUser" class="">Enter New User Name</label>
+      <input type="text" class="form-control is-invalid w-75 my-3"  placeholder="User Name" id="newUser" >
+      <div class="alert alert-danger d-none" role="alert" id="invalidName">
+        In-valid Data
+      </div>
+
+      <label for="newId" class="">Enter New User Id</label>
+      <input type="text" class="form-control is-invalid w-75 my-3"  placeholder="User Name" id="newId" >
+      
+      <button id="submit" class="btn-success btn">submit</button>
+      </div>
+
+      
+</div>
+
+</div>
+
+  <!--        custumer end        -->
+
+
+  <!--        transection start        -->
+
+  <div class="transuction p-5" id="tranection-section">
+
+  <h2 class="text-center">Transuction Details</h2>
+
+  
+
+  <div class="transuction row  container ">
+
+    <div class="traTable col-8">
+    <table class="table w-50 table-success table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Id</th>
+            <th scope="col">custumer-id</th>
+            <th scope="col">Date</th>
+            <th scope="col">Amount</th>
+            
+          </tr>
+        </thead>
+        <tbody id="transuctionTable">
+        
+          
+        </tbody>
+      </table>
+
+
+      
+
+
+    </div>
+    <div class="addTrans col-4">
+    <div class="enterTrans w-100 p-5">
+      <label for="transId" class="">Enter Transuction Id</label>
+    <input type="text" class="form-control is-invalid w-75 my-3"  placeholder="Transuction Id" id="transId" >
+
+    <label for="custId" class="">Enter Custmer Id</label>
+    <input type="text" class="form-control is-invalid w-75 my-3"  placeholder="Custumer Id" id="custId" >
+    
+    <label for="transDate" class="">Enter Date</label>
+    <input type="text" class="form-control is-invalid w-75 my-3"  placeholder="Transuction Date" id="transDate" >
+  
+    <label for="transAmount" class="">Enter Amount</label>
+    <input type="text" class="form-control is-invalid w-75 my-3"  placeholder="Transuction Amount" id="transAmount" >
+    <div class="alert alert-danger d-none" role="alert" id="invalidTrans">
+      In-valid Data
+    </div>
+    <button id="transSubmit" class="btn-success btn">submit</button>
+    </div>
+
+    </div>
+
+    <div id="chartContainer" style="height: 300px; width: 100%;">
+    </div>
+
+  </div>
+</div>
+
+
+    <!--        transection end        -->
+
+
+    <!--      tranection details start                  -->
+
+<div class="details p-5" id="details-section">
+
+    <h2 class="text-center"> Transuction Details</DeTails></h2>
+
+    <div class="transuctionDetails container my-3" id="table">
+
+      
+
+
+      
+  
+    </div>
+  </div>
+
+      <!--      tranection details end                  -->
+
+      <!--      search start                  -->
+
+    <div class="search p-5 " id="search-section">
+
+      <h2 class="text-center">Search</h2>
+
+      <div class="inner-search container row ">
+
+      <div class="enterUser w-75 p-5 col-6">
+        <label for="idSearch" class="">Enter User ID</label>
+      <input type="number" class="form-control is-invalid w-50 my-3"  placeholder="idSearch" id="idSearch" >
+      <div class="alert alert-danger d-none" role="alert" id="idAlert">
+        A simple danger alert—check it out!
+      </div>
+      <button id="idSubmit" class="btn-success btn">submit</button>
+      
+      <div id="idTable">
+
+      </div>
+
+    
+
+     <!-- <table class="table w-50 table-success table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col" colspan="1">name</th>
+            <th scope="col" colspan="2">ahmed aly</th>            
+          </tr>
+          <tr>
+            <th scope="col" colspan="1">custumer ID</th>
+            <th scope="col" colspan="2">2</th>            
+          </tr>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">date</th>    
+            <th scope="col">Amount</th>        
+          </tr>
+        </thead>
+        <tbody >
+        
+          
+        </tbody>
+      </table>-->
+
+
+  </div>
+
+   
+
+
+    
+
+      <div class="enterUser w-75 p-5 col-6 ">
+        <label for="amount" class="">Enter Amount</label>
+      <input type="number" class="form-control is-invalid w-50 my-3"  placeholder="amount" id="amount" >
+      <div class="alert alert-danger w-50 d-none" role="alert" id="amountAlert">
+        A simple danger alert—check it out!
+      </div>
+      <button id="amountSubmit" class="btn-success btn">submit</button>
+
+      
+      
+
+      
+        <table class="table w-75 table-success table-striped">
+          <thead>
+            <tr>
+            
+              <th scope="col">Id</th>
+              <th scope="col">custumer-id</th>
+              <th scope="col">Date</th>
+              <th scope="col">Amount</th>
+              
+            </tr>
+          </thead>
+          <tbody id="amountSearch">
+          
+            
+          </tbody>
+        </table>
+       
+      </div>
+
+    </div>
+  </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
